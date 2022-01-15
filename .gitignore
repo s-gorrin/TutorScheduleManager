@@ -1,2 +1,5 @@
 # Project exclude paths
 /out/
+
+# Non-project files
+header.txt

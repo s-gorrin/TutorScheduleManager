@@ -1,4 +1,12 @@
-public class Schedule {
+/*
+ * Name: Seth Gorrin
+ * Class: CS 622
+ * Project: Tutor Schedule Manager
+ * Date: 15 January 2022
+ * File: Schedule.java
+ */
+
+public abstract class Schedule {
     public static final int DAYS = 7;
 
     private final double[] hoursPerDay = new double[DAYS];
@@ -31,10 +39,4 @@ public class Schedule {
         return result;
     }
 
-    public static void main(String[] args) {
-        Schedule skeddy = new Schedule(new double[]{2, 1.75, 0, 1.75, 0, 0, 0});
-
-        System.out.println(skeddy.getHoursPerWeek());
-
-    }
 }
