@@ -39,4 +39,8 @@ public abstract class Schedule {
         return result;
     }
 
+    public void setHoursPerDay(double[] inputHours) {
+        System.arraycopy(inputHours, 0, hoursPerDay, 0, DAYS);
+    }
+
 }
